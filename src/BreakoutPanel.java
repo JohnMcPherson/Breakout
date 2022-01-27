@@ -1,4 +1,5 @@
 import java.awt.Font;
+import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
@@ -20,7 +21,7 @@ public class BreakoutPanel extends JPanel implements ActionListener, KeyListener
 	private Paddle paddle;
 	private Brick bricks[];
 	
-	public BreakoutPanel(BreakoutNew game) {
+	public BreakoutPanel(Breakout game) {
 		
 		addKeyListener(this);
 		setFocusable(true);
