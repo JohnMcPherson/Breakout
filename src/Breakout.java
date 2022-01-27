@@ -1,4 +1,4 @@
-import java.awt.Color;
+import java.awt.*;
 
 import javax.swing.JFrame;
 
@@ -9,14 +9,24 @@ public class Breakout extends JFrame{
 	private BreakoutPanel panel;
 	
 	public Breakout() {
-		// TODO: Set the size of the screen (use Settings.WINDOW_WIDTH/HEIGHT)
-		// TODO: Set the title
-		// TODO: Set the background colour to white
-		// TODO: Set resizable to false
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+		// DONE: Set the size of the screen (use Settings.WINDOW_WIDTH/HEIGHT)
+		setPreferredSize(new Dimension(Settings.WINDOW_WIDTH, Settings.WINDOW_HEIGHT));
+
+		// DONE: Set the title
+		setTitle("Breakout");
+
+		// DONE: Set the background colour to white
+		setBackground(Color.WHITE);
+
+		// DONE: Set resizable to false
+		setResizable(false);
+
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
         panel = new BreakoutPanel(this);
         add(panel);
-		// TODO: Set visible to true
+
+		// DONE: Set visible to true
+		setVisible(true);
 	}
 
 	public static void main(String[] args) {
