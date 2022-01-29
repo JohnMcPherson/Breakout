@@ -13,7 +13,7 @@ public class Breakout extends JFrame{
 		setPreferredSize(new Dimension(Settings.WINDOW_WIDTH, Settings.WINDOW_HEIGHT));
 
 		// DONE: Set the title
-		setTitle("Breakout");
+		setTitle(Settings.WINDOW_NAME);
 
 		// DONE: Set the background colour to white
 		setBackground(Color.WHITE);
