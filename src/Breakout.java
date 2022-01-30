@@ -10,7 +10,7 @@ public class Breakout extends JFrame{
 	
 	public Breakout() {
 		// DONE: Set the size of the screen (use Settings.WINDOW_WIDTH/HEIGHT)
-		// CHECK: should I use setPreferredSize?
+		// CHECK: is setSize safe to use?
 		// We are setting the size of the JFrame, not a JPanel
 		// setPreferredSize() did not work. So we use setSize()
 		setSize(new Dimension(Settings.WINDOW_WIDTH, Settings.WINDOW_HEIGHT));
