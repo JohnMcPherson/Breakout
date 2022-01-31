@@ -179,7 +179,7 @@ public class BreakoutPanel extends JPanel implements ActionListener, KeyListener
 		// Draw lives left message in the top left corner
 		g.setFont(new Font("Arial", Font.BOLD, 18));
 		String livesLeftMessage = "Lives: " + String.valueOf(livesLeft);
-		g.drawString(livesLeftMessage, 0, 0);
+		g.drawString(livesLeftMessage, Settings.LIVES_POSITION_X, Settings.LIVES_POSITION_Y);
 
 		// Draw screen message
         if(screenMessage != null) {
