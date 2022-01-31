@@ -19,4 +19,8 @@ public class Settings {
 	public static final int MESSAGE_POSITION = 270;
 	public static final int LIVES_POSITION_X = 5;
 	public static final int LIVES_POSITION_Y = 15;
+
+	// additional constants to support assignment 3 Task 1
+	public static final String GAME_OVER_MESSAGE = "Game Over";
+	public static final String GAME_WON_MESSAGE = "You Won!!!";
 }
